@@ -1,0 +1,42 @@
+@import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
+@import '../bower_components/neat/app/assets/stylesheets/neat';
+
+$base-color: #86A2FF;
+
+body {
+  background-color: $base-color;
+}
+
+.output {
+  @include outer-container(20em);
+  height: 5em;
+  color: #95E881;
+  border: 1px solid #95E881;
+}
+
+.buttons{
+  @include outer-container(20em);
+  border: 1px solid #95E881;
+  color: #E8766E;
+}
+
+.buttons div {
+  @include span-columns (2.5);
+  border: 1px solid #95E881;
+  height: 1.5em;
+  display: block;
+  padding: .25em 1.5em .25em 1.5em;
+  margin: .25em;
+  border-top: 1px solid #c0ffff ;
+  border-right: 1px solid #00f ;
+  border-bottom: 1px solid #00f ;
+  border-left: 1px solid #c0ffff ;
+}
+
+.buttons div:hover{
+  border-top: 2px solid #00f ;
+  border-right: 2px solid #c0ffff ;
+  border-bottom: 2px solid #c0ffff ;
+  border-left: 2px solid #00f ;
+  background-color: #8688FF;
+}
