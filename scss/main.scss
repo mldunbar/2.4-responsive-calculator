@@ -1,0 +1,134 @@
+@import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
+$gutter: 0em;
+@import '../bower_components/neat/app/assets/stylesheets/neat';
+
+$base-color: #99C0FF;
+$text-color: #26487F;
+$border-color: #26487F;
+
+.buttons span{
+  background-color: $base-color;
+  padding: 1em;
+  border-right: .5em solid $border-color;
+  border-bottom: .5em solid $border-color;
+  border-radius: 2%;
+}
+
+#output {
+  @include outer-container(15em);
+  height: 3em;
+  color: $text-color;
+  background-color: $base-color;
+  padding: 1em;
+  border: 1px solid black;
+  text-align: right;
+}
+
+.buttons{
+  @include outer-container(15em);
+  color: $text-color;
+}
+
+.buttons span {
+  @include span-columns (3);
+  @include omega();
+  border: 1px solid $border-color;
+  height: 2.75em;
+  display: block;
+  padding: .75em 1.5em .25em 1.5em;
+  border-top: 1px solid #73787F ;
+  border-right: 1px solid $border-color ;
+  border-bottom: 1px solid $border-color ;
+  border-left: 1px solid #73787F;
+}
+
+.buttons span:hover{
+  border-top: 1px solid #D3DCEB ;
+  border-right: 1px solid #fff ;
+  border-bottom: 1px solid #fff ;
+  border-left: 1px solid #D3DCEB ;
+  background-color: #81A1D6;
+}
+
+.buttons .clear{
+  background-color: #FFF88E;
+}
+
+.buttons .plus-minus{
+  background-color: #FFF88E;
+}
+
+.buttons .percentage{
+  background-color: #FFF88E;
+}
+
+.buttons .divide{
+  background-color: #FFF88E;
+}
+
+.buttons .seven{
+}
+
+.buttons .eight{
+}
+
+.buttons .nine{
+}
+
+.buttons .times{
+  background-color: #FFF88E;
+}
+
+.buttons .four{
+}
+
+.buttons .five{
+}
+
+.buttons .six{
+}
+
+.buttons .minus{
+  background-color: #FFF88E;
+}
+
+.buttons .one{
+}
+
+.buttons .two{
+}
+
+.buttons .three{
+}
+
+.buttons .plus{
+  background-color: #FFF88E;
+}
+
+.buttons .zero{
+  @include span-columns(6);
+  @include omega();
+}
+
+.buttons .decimal{
+}
+
+.buttons .equals{
+  background-color: #FFF88E;
+
+}
+
+.buttons .equals:hover,
+.buttons .plus:hover,
+.buttons .minus:hover,
+.buttons .times:hover,
+.buttons .divide:hover,
+.buttons .percentage:hover,
+.buttons .plus-minus:hover,
+.buttons .clear:hover{
+  border-top: 1px solid #D3DCEB ;
+  border-right: 1px solid #fff ;
+  border-bottom: 1px solid #fff ;
+  border-left: 1px solid #D3DCEB ;
+  background-color: #F2C22F;
+}
